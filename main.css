@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*
+The Main Style Sheet for Capstone Project
+Editors: Fernando Sarmiento
+Date: 03.02.18
+
+Filename: main.css
+*/
+
+
+/*nav styles*/
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+nav ul li {
+    width: 15%;
+    float: right;
+    display: block;
+    content: "";
+}
+
+
+/*logo styles*/
+
+#logo {
+    width: 8%;
+}
+
+
+/*Company name styles*/
+
+h1 {
+    width: 80;
+    float: right;
+    display: block;
+    content: "";
+}
