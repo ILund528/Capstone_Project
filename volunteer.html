@@ -11,7 +11,7 @@
 <body>
     <header>
         <figure>
-            <img src="healthcare-logo.jpg" alt="">
+            <img src="healthcare-logo.png" alt="">
         </figure>
         <h1>Volunteer and Donations</h1>
         <nav>
@@ -41,8 +41,8 @@
     <article>
         <section>
             <form action="">
-                <h1>Volunteer Form</h1>
-                <fieldset id="contactInfo">    
+                <h1>Volunteer/Donation Form</h1>
+                    <fieldset id="contactInfo">    
                         <label for="fnBox">First Name*</label>
                         <input name="firstName" id="fnBox" type="text" required />
             
@@ -54,20 +54,24 @@
             
                         <label for="phoneBox">Phone Number*</label>
                         <input name="phoneNumber" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required placeholder="(nnn) nnn-nnnn" />
-                     </fieldset>
-                     <fieldset id="volunteerLocation">
-                            <label for="volunteer">Volunteer Locations</label>
-                            <select id="volunteerBox" name="volunteerOption" size="5" required>
-                               <option></option>
-                               <option></option>
-                               <option></option>
-                               <option></option>
-                               <option></option>
-                            </select>
-                            <label for="hours">Volunteer</label>
-                            <input type="number" min="1" max="5" id="hoursBox" name="hoursSpend" /><span>Hours</span>
-                         </fieldset>
-                         <input id="formSubmit" type="submit" value="Submit" />
+                    </fieldset>
+                    <fieldset id="volunteerLocation">
+                        <label for="volunteer">Volunteer Locations</label>
+                        <select id="volunteerBox" name="volunteerOption" size="5" required>
+                            <option>Location 1</option>
+                            <option>Location 2</option>
+                            <option>Location 3</option>
+                            <option>Location 4</option>
+                            <option>Location 5</option>
+                        </select>
+                        <label for="hours">Volunteer</label>
+                        <input type="number" min="1" max="5" id="hoursBox" name="hoursSpend" /><span>Hours</span>
+                    </fieldset>
+                    <fieldset id="Donations">
+                        <label for="Donations">Donation</label>
+                        <input type="text" id="donateBox" name="DonateAmount" />
+                    </fieldset>
+                    <input id="formSubmit" type="submit" value="Submit" />
             </form>
         </section>
     </article>
