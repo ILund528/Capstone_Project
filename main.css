@@ -79,17 +79,17 @@ body aside {
     /* height: 800px; */
 }
 aside h2 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     text-align: center;
 }
 aside p:first-of-type {
     text-align: left;
-    font-size: 2em;
+    font-size: 1.7em;
     color: black;
 }
 aside p {
     text-align: justify;
-    font-size: 1.35em;
+    font-size: 1.05em;
     color: #2E4749;
 }
 aside cite {
@@ -103,8 +103,8 @@ body article {
     width: 90%;
     font-size: 1.4em;
 	line-height: 1.2em;
-	margin: 10px 0px;
-    padding: 10px;
+	margin: 10px 40px;
+    padding: 20px;
 }
 article h2 {
     text-align: center;
@@ -184,6 +184,9 @@ body footer {
     aside p {
         font-size: 1.7em;
     }
+    body article {
+        margin: 10px 120px;
+    }
     article h2 {
         font-size: 2.2em;
     }
@@ -199,5 +202,94 @@ body footer {
     nav ul li a {
         font-size: 1em;
         margin-right: 16%;
+    }
+    aside h2 {
+        font-size: 2em;
+    }
+    aside p:first-of-type {
+        font-size: 1.4em;
+    }
+    aside p {
+        font-size: .9em;
+    }
+    body article {
+        margin: 10px 20px;
+    }
+    article h2 {
+        line-height: 1.4em;
+        font-size: 1.2em;
+    }
+    article p {
+        font-size: .9em;
+    }
+    body footer {
+        font-size: .8em;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        width: 85%;
+    }
+    header img {
+        width: 30%;
+    } 
+    nav ul li a {
+        font-size: 1.5em;
+        margin-right: 10%;
+    }
+    aside h2 {
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    header h1 {
+        padding-top: 37px;
+    }
+    nav ul {
+        padding-left: 8%;
+    }
+    nav ul li a {
+        font-size: 1em;
+        margin-right: 7%; 
+    }
+    body aside {
+        display: none;
+    }
+    body article {
+        margin: 10px 0px;
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    header h1 {
+        padding-top: 43px;
+        font-size: 1.5em;
+    }
+    nav ul {
+        padding-left: 5%;
+    }
+    nav ul li a {
+        font-size: 1em;
+        margin-right: 5%; 
+    }
+}
+@media only screen and (max-width: 375px) {
+    header h1 {
+        padding-top: 36px;
+        font-size: 1.3em;
+    }
+    nav ul {
+        padding-left: 5%;
+    }
+    nav ul li:first-of-type {
+        font-size: 1.2em;
+        margin-right: 25%;
+        clear: both; 
+    }
+    nav ul li a {
+        font-size: 1em;
+        margin-right: 8%;
+        margin-left: 22%;
+        clear: both; 
     }
 }
