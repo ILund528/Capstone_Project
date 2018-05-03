@@ -22,6 +22,7 @@ body {
     background: #9AC9CD;
     border: 1px solid black;
 }
+
 /* Header styles */
 body header {
     width: 100%;
@@ -29,6 +30,7 @@ body header {
     border-bottom: 1px solid #FFFFFF;
     border-top: 1px solid #15F2F5;
     background: #15F2F5;
+    font-family: sans-serif;
 }
 
 header img {
@@ -40,9 +42,9 @@ header img {
  }
 header h1 {
     text-align: center;
-    /* width: 75%; */
     padding-top: 50px;
 }
+
 /* nav styles */
 body nav {
     width: 100%;
@@ -64,21 +66,24 @@ nav ul li a {
     margin-right: 23%; 
     text-decoration: none;
 }
+nav ul li#homeLink a {
+    margin-left: 8%;
+}
 
 /*  aside styles */
-
 body aside {
     float: left;
-    width: 30%;
+    width: 28%;
     background-color: rgba(175, 207, 167, 0.6);
     border-left: 3px solid rgb(51, 153, 200);
     border-right: 3px solid rgb(51, 153, 200);
+    border-radius: 50px;
     padding: 27px;
     margin-right: 30px;
     display: block;
-    /* height: 800px; */
 }
 aside h2 {
+    font-family: sans-serif;
     font-size: 2.2em;
     text-align: center;
 }
@@ -95,8 +100,8 @@ aside p {
 aside cite {
     color: #598185;
 }
-/* article styles */
 
+/* article styles */
 body article {
     -webkit-flex: 5 1 281px;
     flex: 5 1 281px;
@@ -104,26 +109,44 @@ body article {
     font-size: 1.4em;
 	line-height: 1.2em;
 	margin: 10px 40px;
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
 }
 article h2 {
+    font-family: sans-serif;
     text-align: center;
     padding-top: 10px;
 }
 article p {
     text-align: justify;
 }
-/* Form styles */
 
+/* Form styles */
 body form {
     margin-left: 350px;
-    margin-top: 150px;
+    margin-top: 100px;
     display: block;
 }
 form h1 {
     text-align: center;
     font-size: 2.3em;
     line-height: 1em;
+    font-family: sans-serif;
+}
+form fieldset:first-of-type {
+    border-top: 3px solid #D8D8D8;
+    border-left: 3px solid #D8D8D8;
+    border-right: 3px solid #D8D8D8;
+    background: #DB9B24;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+form fieldset:last-of-type {
+    border-bottom: 3px solid #D8D8D8;
+    border-left: 3px solid #D8D8D8;
+    border-right: 3px solid #D8D8D8;
+    background: #DB9B24;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 form #contactInfo label {
     float: left;
@@ -132,6 +155,8 @@ form #contactInfo label {
 form #contactInfo input {
     float: right;
     margin-right: 30px;
+    border: 1px solid white;
+    border-radius: 30px;
 }
 form #volunteerDonations label {
     float: left;
@@ -142,17 +167,39 @@ form #volunteerDonations label:nth-of-type(2) {
 form #volunteerDonations select {
     float: right;
     clear: both;
-    margin-right: 50px;
+    margin-right: 30px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
 }
 form #volunteerDonations input {
     float: left;
     margin: 5px 8px 0px 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
 }
 form #volunteerDonations span {
     float: left;
 }
+form input#formSubmit {
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-left: 190px;
+    font-size: 1.2em;;
+}
+/* Address styles */
+body address {
+    margin: 10px 200px 10px 0px;
+    float: right;
+    border-radius: 20px;
+    background-color: rgba(175, 207, 167, 0.6);
+    border-left: 3px solid rgb(51, 153, 200);
+    border-right: 3px solid rgb(51, 153, 200);
+    padding: 10px;
+    font-family: sans-serif;  
+}
 /* Footer styles */
-
 body footer {
     clear: both;
     text-align: left;
@@ -174,6 +221,9 @@ body footer {
     nav ul li a {
         font-size: 1.6em;
         margin-right: 24.1%;
+    }
+    nav ul li#homeLink a {
+        margin-left: 8%;
     }
     aside h2 {
         font-size: 3em;
@@ -197,11 +247,38 @@ body footer {
     body footer {
         font-size: 1.5em;
     }
+    form input#formSubmit {
+        border: 1px solid white;
+        border-radius: 50px;
+        margin-left: 425px;
+        font-size: 2em;;
+    }
+    form h1 {
+        font-size: 3em;
+    }
+    form fieldset {
+        font-size: 2em;
+        line-height: 1em;
+    }
+    form #contactInfo input {
+        padding: 5px;
+    }
+    form #volunteerDonations select {
+        padding: 50px;
+        font-size: .7em;
+    }
+    form #volunteerDonations input {
+        padding: 10px;
+        font-size: .7em;
+    }
 }
 @media only screen and (max-width: 1024px) {
     nav ul li a {
         font-size: 1em;
         margin-right: 16%;
+    }
+    nav ul li#homeLink a {
+        padding-left: 7%;
     }
     aside h2 {
         font-size: 2em;
@@ -222,6 +299,16 @@ body footer {
     article p {
         font-size: .9em;
     }
+    body form {
+        margin-left: 275px;
+        margin-top: 100px;
+    }
+    form h1 {
+        font-size: 1.5em;
+    }
+    form fieldset {
+        font-size: .7em;
+    }
     body footer {
         font-size: .8em;
     }
@@ -236,6 +323,12 @@ body footer {
     nav ul li a {
         font-size: 1.5em;
         margin-right: 10%;
+    }
+    nav ul li#homeLink a {
+        padding-left: 6%;
+    }
+    article h2:nth-of-type(2) {
+        margin-top: 50px;
     }
     aside h2 {
         padding-top: 20px;
@@ -259,37 +352,78 @@ body footer {
         margin: 10px 0px;
         padding: 15px;
     }
+    body address {
+        margin-right: 35px; 
+    }
 }
+
 @media only screen and (max-width: 375px) {
     header h1 {
-        padding-top: 43px;
+        padding-top: 62px;
+        font-size: 1.7em;
+    }
+    header h1#volunteer {
+        padding-top: 35px;
+        font-size: 1.7em;
+    }
+    nav ul li#homeLink a {
+        padding-left: 0%;
+    }
+    header img {
+        width: 40%;
+    } 
+    nav ul {
+        padding-left: 5%;
+    }
+    nav ul li#volunteerLink {
+        margin-left: 18%;
+        clear: both; 
+    }
+    nav ul li#homeLink {
+        font-size: 1.5em;
+        margin-left: 38%;
+        clear: both; 
+    }
+    nav ul li#homeLink a {
+        margin-left: 0%;
+    }
+    nav ul li {
+        font-size: 1.5em;
+        margin-left: 33%;
+        clear: both; 
+    }
+    body article {
+        margin-top: 60px;
+        margin-bottom: 0px;
+        padding: 15px;
+    }
+    body address {
+        margin-right: 19px; 
+    }
+}
+@media only screen and (max-width: 320px) {
+    header h1 {
+        padding-top: 56px;
         font-size: 1.5em;
     }
-    nav ul {
-        padding-left: 5%;
-    }
-    nav ul li a {
-        font-size: 1em;
-        margin-right: 5%; 
-    }
-}
-@media only screen and (max-width: 375px) {
-    header h1 {
-        padding-top: 36px;
-        font-size: 1.3em;
-    }
-    nav ul {
-        padding-left: 5%;
-    }
-    nav ul li:first-of-type {
-        font-size: 1.2em;
-        margin-right: 25%;
+    nav ul li#volunteerLink {
+        margin-left: 12%;
         clear: both; 
     }
-    nav ul li a {
-        font-size: 1em;
-        margin-right: 8%;
-        margin-left: 22%;
+    nav ul li#homeLink {
+        font-size: 1.5em;
+        margin-left: 34%;
         clear: both; 
+    }
+    nav ul li {
+        font-size: 1.5em;
+        margin-left: 30%;
+        clear: both; 
+    }
+    body address {
+        margin: 0px; 
+    }
+    body footer {
+        font-size: .7em;
     }
 }
