@@ -59,14 +59,21 @@ body nav {
 nav ul {
     list-style-type: none;
     text-align: center;
-    padding-left: 11%;  
+    padding-left: 11%;
+    margin-left: 11%;  
 }
 nav ul li a {
     float: left;
-    margin-right: 23%; 
+    margin-right: 22%; 
     text-decoration: none;
 }
 nav ul li#homeLink a {
+    margin-right: 19%;
+}
+nav ul li#volunteerLink a {
+    margin-right: 18%;
+}
+nav ul li#aboutus a {
     margin-left: 8%;
 }
 
@@ -220,19 +227,23 @@ body footer {
     }
     nav ul li a {
         font-size: 1.6em;
-        margin-right: 24.1%;
+        margin-right: 23%;
     }
     nav ul li#homeLink a {
-        margin-left: 8%;
+        margin-left: 3%;
+        margin-right: 23%;
+    }
+    nav ul li#aboutus a {
+        margin-left: 0%;
     }
     aside h2 {
         font-size: 3em;
     }
     aside p:first-of-type {
-        font-size: 2.4em;
+        font-size: 2.5em;
     }
     aside p {
-        font-size: 1.7em;
+        font-size: 1.9em;
     }
     body article {
         margin: 10px 120px;
@@ -262,14 +273,20 @@ body footer {
     }
     form #contactInfo input {
         padding: 5px;
+        font-size: .5em;
     }
     form #volunteerDonations select {
-        padding: 50px;
+        padding: 40px;
+        border-radius: 30px;
         font-size: .7em;
     }
     form #volunteerDonations input {
         padding: 10px;
         font-size: .7em;
+    }
+    body address {
+        font-size: 1.5em;
+        margin-right: 350px;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -277,8 +294,8 @@ body footer {
         font-size: 1em;
         margin-right: 16%;
     }
-    nav ul li#homeLink a {
-        padding-left: 7%;
+    nav ul {
+        margin-left: 0%;  
     }
     aside h2 {
         font-size: 2em;
@@ -309,6 +326,21 @@ body footer {
     form fieldset {
         font-size: .7em;
     }
+    form #contactInfo input {
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    form #volunteerDonations select {
+        margin-right: 10px;
+    }
+    form #volunteerDonations input {
+        padding: 4px;
+        font-size: .7em;
+    }
+    form input#formSubmit {
+        margin-left: 125px;
+        font-size: 1em;;
+    }
     body footer {
         font-size: .8em;
     }
@@ -321,11 +353,18 @@ body footer {
         width: 30%;
     } 
     nav ul li a {
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-right: 10%;
     }
     nav ul li#homeLink a {
-        padding-left: 6%;
+        margin-right: 12%;
+        margin-left: 9%
+    }
+    nav ul li#volunteerLink a {
+        margin-right: 8%;
+    }
+    nav ul {
+        margin-left: 0%;  
     }
     article h2:nth-of-type(2) {
         margin-top: 50px;
@@ -333,17 +372,29 @@ body footer {
     aside h2 {
         padding-top: 20px;
     }
+    form input#formSubmit {
+        margin-left: 115px;
+        font-size: .8em;
+    }
 }
 @media only screen and (max-width: 425px) {
     header h1 {
         padding-top: 37px;
     }
+    header h1#volunteer {
+        padding-top: 28px;
+        font-size: 1.6em;
+    }
     nav ul {
         padding-left: 8%;
     }
     nav ul li a {
-        font-size: 1em;
+        font-size: .9em;
         margin-right: 7%; 
+    }
+    nav ul li#homeLink a {
+        margin-right: 12%;
+        margin-left: 0%;
     }
     body aside {
         display: none;
@@ -354,6 +405,14 @@ body footer {
     }
     body address {
         margin-right: 35px; 
+    }
+    body form {
+        margin-left: 0px;
+        margin-top: 80px;
+    }
+    form input#formSubmit {
+        margin-left: 135px;
+        font-size: .6em;
     }
 }
 
@@ -399,6 +458,27 @@ body footer {
     }
     body address {
         margin-right: 19px; 
+    }
+    form h1 {
+        font-size: 1.4em;
+    }
+    form label {
+        font-size: .8em;
+    }
+    form input {
+        font-size: .5em;
+    }
+    form #volunteerDonations select {
+        padding: 2px;
+    }
+    form #volunteerDonations input {
+        padding: 1px;
+    }
+    form #volunteerDonations span {
+        font-size: .8em;
+    }
+    form input#formSubmit {
+        margin-left: 116px;
     }
 }
 @media only screen and (max-width: 320px) {
