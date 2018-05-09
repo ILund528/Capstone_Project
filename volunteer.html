@@ -37,22 +37,22 @@
                 <h1>Volunteer/Donation Form</h1>
                     <fieldset id="contactInfo">    
                         <label for="fnBox">First Name*</label>
-                        <input name="firstName" id="fnBox" type="text" required />
+                        <input name="firstName" id="fnBox" type="text" />
             
                         <label for="lnBox">Last Name*</label>
-                        <input name="lastName" id="lnBox" type="text" required />
+                        <input name="lastName" id="lnBox" type="text" />
             
                         <label for="mailBox">E-mail*</label>
-                        <input name="email" id="mailBox" type="email" required/>
+                        <input name="email" id="mailBox" type="email" />
             
                         <label for="phoneBox">Phone Number*</label>
-                        <input name="phoneNumber" id="phoneBox" type="tel" pattern="^\d{3}[-]\d{3}[-]\d{4}" required placeholder="(nnn) nnn-nnnn" />
+                        <input name="phoneNumber" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(nnn) nnn-nnnn" />
                     </fieldset>
                     <fieldset id="volunteerDonations">
                         <label for="hours">Volunteer</label>
-                        <input type="number" min="1" max="5" id="hoursBox" name="hoursSpend" /><span>Hours</span>
+                        <input type="number" min="1" max="5" id="hBox" name="hoursSpend" /><span>Hours</span>
                         <label for="volunteer">Volunteer Locations</label>
-                        <select id="volunteerBox" name="volunteerOption" size="5" required>
+                        <select id="volunteerBox" name="volunteerOption" size="5">
                             <option>Glendale Shelter</option>
                             <option>Buckeye Shelter</option>
                             <option>Flagstaff Shelter</option>
@@ -60,7 +60,7 @@
                             <option>phoenix Shelter</option>
                         </select>
                         <label for="Donations">Donations</label>
-                        <input type="text" id="donateBox" name="DonateAmount" />
+                        <input type="text" id="donateBox" name="DonateAmount" pattern="\d" />
                     </fieldset>
                     <input id="formSubmit" type="submit" value="Submit" />
             </form>
@@ -69,6 +69,7 @@
     <footer>
         <p>&copy; 2017-2018 Umbrella Hand. All Rights Reserved.</p>
     </footer>
+    <script src="form.js"></script>
 </body>
 
 </html>
