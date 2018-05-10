@@ -11,6 +11,7 @@ Filename: main.css
 
 html {
     background-image: url("background-images.jpg");
+    hyphens: auto;
 }
 
 /* Body styles */
