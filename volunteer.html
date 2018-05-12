@@ -38,17 +38,22 @@
                     <fieldset id="contactInfo">    
                         <label for="fnBox">First Name*</label>
                         <input name="firstName" id="fnBox" type="text" />
+                        <canvas id="first" width="10px" height="10px" ></canvas>
             
                         <label for="lnBox">Last Name*</label>
                         <input name="lastName" id="lnBox" type="text" />
+                        <canvas id="second" width="10px" height="10px"></canvas>
             
                         <label for="mailBox">E-mail*</label>
                         <input name="email" id="mailBox" type="email" />
+                        <canvas id="third" width="10px" height="10px"></canvas>
             
                         <label for="phoneBox">Phone Number*</label>
                         <input name="phoneNumber" id="phoneBox" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(nnn) nnn-nnnn" />
+                        <canvas id="fourth" width="10px" height="10px"></canvas>
                     </fieldset>
                     <fieldset id="volunteerDonations">
+                         <canvas id="fifth" width="10px" height="10px"></canvas>
                         <label for="hours">Volunteer</label>
                         <input type="number" min="1" max="5" id="hBox" name="hoursSpend" /><span>Hours</span>
                         <label for="volunteer">Volunteer Locations</label>
@@ -59,7 +64,9 @@
                             <option>Tonopah Shelter</option>
                             <option>phoenix Shelter</option>
                         </select>
+                        <canvas id="sixth" width="10px" height="10px"></canvas>
                         <label for="Donations">Donations</label>
+                        <canvas id="seveth" width="10px" height="10px"></canvas>
                         <input type="text" id="donateBox" name="DonateAmount" pattern="\d" />
                     </fieldset>
                     <input id="formSubmit" type="submit" value="Submit" />
